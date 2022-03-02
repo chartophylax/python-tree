@@ -1,5 +1,5 @@
 
-# Обход двоичного дерева в ширину / в глубину
+# Обход бинарного дерева в ширину и в глубину
  
 class Node:
     def __init__(self, data, left, right):
@@ -15,7 +15,7 @@ class BinaryTree:
         self._root = node
  
     def insert(self, node):
-                 # Вот построить полное двоичное дерево
+                 # Построить полное бинарное дерево
         lst = []
         def insert_node(tree_node, p, node):
             if tree_node._left is None:
@@ -72,7 +72,7 @@ def depth_tree(tree):
 if __name__ == '__main__':
     lst = [12, 9, 7, 19, 3, 8, 52, 106, 70, 29, 20, 16, 8, 50, 22, 19]
     tree = BinaryTree()
-         # Сгенерировать полное двоичное дерево
+         # Сгенерировать полное бинарное дерево
     for (i, j) in enumerate(lst):
         node = Node(j, None, None)
         if i == 0:
